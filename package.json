@@ -1,0 +1,20 @@
+{
+  "name": "chicken-dinner",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:Gerhut/chicken-dinner.git",
+  "author": "George Chung <Gerhut@GMail.com>",
+  "license": "Unlicensed",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "test": "eslint"
+  }
+}

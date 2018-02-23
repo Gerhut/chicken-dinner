@@ -1,2 +1,2 @@
 # chicken-dinner
-A simple app built by React Native + Apollo + Koa
+A simple app built by React Native + Apollo + Express

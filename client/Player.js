@@ -11,4 +11,4 @@ Player.navigationOptions = props => ({
   headerTintColor: '#FFF'
 })
 
-export default Player;
+export default Player

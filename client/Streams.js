@@ -31,27 +31,27 @@ class Streams extends React.Component {
     const { loadingState } = this.state
     return (
       <FlatList
-        style={{ backgroundColor: "#6441A4" }}
-        data={ streams }
-        keyExtractor={ stream => stream.id }
-        renderItem={ ({ item: stream }) => (
-          <Stream stream={ stream } onPlay={ () => play(stream) } />
-        ) }
+        style={{ backgroundColor: '#6441A4' }}
+        data={streams}
+        keyExtractor={stream => stream.id}
+        renderItem={({ item: stream }) => (
+          <Stream stream={stream} onPlay={() => play(stream)} />
+        )}
         refreshControl={
           <RefreshControl
-            refreshing={ loadingState === 'refresh' && loading }
-            onRefresh={ this.refresh }
-            colors={["#6441A4"]}
-            tintColor="#FFF"
+            refreshing={loadingState === 'refresh' && loading}
+            onRefresh={this.refresh}
+            colors={['#6441A4']}
+            tintColor='#FFF'
           />
         }
-        onEndReached={ this.more }
+        onEndReached={this.more}
         ListFooterComponent={
           <Text style={{
             paddingVertical: 12,
-            color: "#FFF",
+            color: '#FFF',
             fontSize: 16,
-            textAlign: "center"
+            textAlign: 'center'
           }}>Loading...</Text>
         }
       />
@@ -72,7 +72,7 @@ const WrappedStreams = graphql(gql`
   options: ({ navigation: { state: { params: { game } } } }) => ({ variables: { game } }),
   props: ({
     ownProps: { navigation },
-    data: { streams=[], loading, refetch, fetchMore }
+    data: { streams = [], loading, refetch, fetchMore }
   }) => ({
     streams,
     loading,

@@ -26,15 +26,15 @@ const styles = StyleSheet.create({
 
 const Stream = ({ stream: { id, title, preview, player }, onPlay }) => (
   <TouchableHighlight
-    accessible={ true }
-    accessibilityLabel={ title }
-    onPress={ onPlay }
+    accessible
+    accessibilityLabel={title}
+    onPress={onPlay}
   >
-    <View style={ styles.view }>
-      <Image source={{ uri: preview }} style={ styles.image } />
-      <Text numberOfLines={1} style={ styles.text }>{ title }</Text>
+    <View style={styles.view}>
+      <Image source={{ uri: preview }} style={styles.image} />
+      <Text numberOfLines={1} style={styles.text}>{ title }</Text>
     </View>
   </TouchableHighlight>
 )
 
-export default Stream;
+export default Stream

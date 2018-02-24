@@ -1,5 +1,4 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import { ApolloProvider } from 'react-apollo'
 
@@ -11,10 +10,10 @@ const Navigator = StackNavigator({
   Streams: { screen: Streams },
   Player: { screen: Player }
 }, {
-  initialRouteName: "Streams",
+  initialRouteName: 'Streams',
   initialRouteParams: { game: "PLAYERUNKNOWN'S BATTLEGROUNDS" }
-});
+})
 
 export default () => <ApolloProvider client={client}>
-  <Navigator/>
+  <Navigator />
 </ApolloProvider>

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-plugin-transform-inline-environment-variables": "^0.3.0",
+    "babel-plugin-transform-dotenv": "^1.0.0",
     "react-native-scripts": "1.11.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",

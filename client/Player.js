@@ -6,7 +6,9 @@ const Player = props => (
 )
 
 Player.navigationOptions = props => ({
-  title: props.navigation.state.params.stream.title
+  title: props.navigation.state.params.stream.title,
+  headerStyle: { backgroundColor: '#6441A4' },
+  headerTintColor: '#FFF'
 })
 
 export default Player;
